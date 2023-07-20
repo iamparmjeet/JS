@@ -26,3 +26,13 @@ if (marks < 33) {
 } else {
     console.log('Please enter your marks');
 }
+
+console.log('Logged In Example');
+
+let email = false;
+let facebook = false;
+let google = false;
+
+if (email & facebook || google) {
+    console.log('Login sucess');
+}
