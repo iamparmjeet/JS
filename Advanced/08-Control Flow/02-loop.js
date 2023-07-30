@@ -30,6 +30,18 @@ for (let i = 0; i < heroArray.length; i++) {
 // Break and Continue
 console.log('BREAK AND CONTINUE')
 
-for (let i = 0; i <= 20; i++) {
-    
+// for (let i = 1; i <= 20; i++) {
+//     if (i === 5) {
+//         console.log(`Detected 5`)
+//         break;
+//     }
+//     console.log(i)
+// }
+
+for (let i = 1; i <= 20; i++) {
+    if (i === 5) {
+        console.log(`Detected 5`)
+        continue;
+    }
+    console.log(i)
 }
