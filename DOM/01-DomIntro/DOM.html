@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Learning - 101</title>
+</head>
+<body>
+    <div class="bg-black">
+        <h2 id="title" class="heading">Learning DOM</h2>
+        <p>Lorem ipsum dolor sit.</p>
+    </div>
+    <ul class="parent">
+        <li class="child">One</li>
+        <li class="child">Two</li>
+        <li class="child">Three</li>
+        <li class="child">Four</li>
+    </ul>
+    <script>
+        let myUl = document.querySelector('.parent')
+        // console.log(myUl)
+        // console.log(myUl.children)
+        // console.log(myUl.children[1].innerHTML)
+
+        for (let i = 0; i < myUl.children.length; i++) {
+            // console.log(myUl.children[i].innerHTML)
+        }
+
+        // from Child to Parent
+
+        let child = document.querySelector('.child')
+        console.log(child.parentElement.style.backgroundColor = 'green')
+        console.log(child.parentElement)
+        console.log(child.nextElementSibling)
+        console.log('Nodes:', parent.childNodes) 
+
+        
+    </script>
+</body>
+</html>

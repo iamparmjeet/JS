@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 2</title>
+</head>
+<body>
+    <ul class="language">
+        <li>Javascript</li>
+        <li>goLang</li>
+        <li>TypeScript</li>
+    </ul>
+   
+</body>
+    <script>
+        // Basic but has some issue with optimisation
+        function addLanguage(langName) {
+           const li = document.createElement('li')
+           li.innerHTML = `${langName}`
+           document.querySelector('.language').appendChild(li)
+        }
+       // addLanguage('kk')
+
+        function addOptiLang(langName) {
+            const li = document.createElement('li')
+            li.appendChild(document.createTextNode(langName))
+            document.querySelector('.language').appendChild(li)
+        }
+        addOptiLang('py')
+
+        // Edit
+        const secondLang = document.querySelector('li:nth-child(2)')
+        // console.log(secondLang)
+        // secondLang.innerHTML = 'Mojo' // Not Optimised
+
+        let newLi = document.createElement('li')
+        newLi.textContent = 'Mojo'
+        secondLang.replaceWith(newLi)
+
+        // Edit
+
+        let firstLang = document.querySelector('li:nth-child(1)')
+        firstLang.outerHTML = '<li>Vite</li>'
+
+
+        // Remove
+
+        let lastLang = document.querySelector('li:last-child')
+        lastLang.remove()
+    </script>
+</html>
