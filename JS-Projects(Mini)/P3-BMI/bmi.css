@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.title {
+    background-color: antiquewhite;
+}
+.title h2 {
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+.bmiBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.inputBox {
+    display: flex;
+    gap: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.bmiForm button {
+    padding: 0.6rem 1rem;
+    border-radius: 0.1rem;
+    border: none;
+    background: peachpuff;
+    font-weight: 600;
+}
