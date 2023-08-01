@@ -28,16 +28,16 @@ nav h1 {
     height: var(--size);
     cursor: pointer;
 }
-.color1 {
+#color1 {
     background-color: white;
 }
-.color2 {
+#color2 {
     background-color: aqua;
 }
-.color3 {
+#color3 {
     background-color: burlywood;
 }
 
-.color4 {
+#color4 {
     background-color: black;
 }

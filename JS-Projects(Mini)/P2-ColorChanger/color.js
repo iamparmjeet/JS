@@ -1,9 +1,16 @@
-const buttons = document.querySelectorAll('.colorBox');
-console.log(buttons)
+let boxes = document.querySelectorAll('.colorBox');
+// console.log(boxes.length)
 let body = document.querySelector('body')
 
-//Adding Event Listner to Every Button
-
-buttons.forEach(function (button) {
-    // console.log(buttons)
-} )
+boxes.forEach( function(box) {
+    // console.log(box)
+    box.addEventListener('click', function (e) {
+        //    console.log( box.id)
+        console.log(e)
+        console.log(e.target.id)
+        // if (e.target.id === 'red') {
+        //     body.style.backgroundColor = e.target.id;
+        // }
+        body.setAttribute('id', e.target.id)
+    })
+})
