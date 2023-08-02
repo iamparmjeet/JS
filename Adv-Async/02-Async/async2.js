@@ -4,7 +4,7 @@ let sayDate = function (str) {
     console.log(str, Date.now())
 }
 
-let intervalFun = setInterval(sayDate, 1000, 'fromFun')
+let intervalFun = setInterval(sayDate, 1000, 'frmOutInterval')
 
 let stopBtn = document.getElementById('stop')
 let startBtn = document.getElementById('start')
