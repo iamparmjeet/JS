@@ -61,4 +61,5 @@ console.log(`LastIndexOfMethod with Position with negative: ${str1.lastIndexOf('
 console.log(`lastIndexOf with Empty String: ${str1.lastIndexOf('')}`) // 30
 
 console.log(`LastIndex with Undefined String: ${str1.lastIndexOf()}`) // 9 Because there is undefined word present in the string
-console.log(`LastIndex with Undefined String: ${str.lastIndexOf()}`) // -1 Because there is no undefined word present in the string
+console.log(`LastIndex with Undefined String: ${str.lastIndexOf()}`)
+// -1 Because there is no undefined word present in the string
