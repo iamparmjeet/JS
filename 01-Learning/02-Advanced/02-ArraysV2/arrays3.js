@@ -147,3 +147,16 @@ const compact = (arr) => arr.filter(Boolean)
 
 console.log(`False Array: ${falsyArr1}`)
 console.log(compact(falsyArr1))
+
+// REVERSE A STRING
+
+console.log('REVERSE A STRING')
+
+let string1 = 'hello'
+
+const reverseString = (str) => {
+   return str.split('').reverse().join('')
+}
+
+console.log(`Origianl String: ${string1}`)
+console.log(reverseString(string1))
