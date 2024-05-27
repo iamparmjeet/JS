@@ -185,3 +185,27 @@ const isEmpty1 = (obj) => {
 
 console.log('Origianl Obj:' + obj2)
 console.log(isEmpty1(obj2))
+
+// NUMBER OF DAYS IN A MONTH
+
+console.log('NUMBER OF DAYS IN A MONTH')
+
+const getDaysInMonth = (date) => {
+   return new Date(
+      date.getFullYear(), date.getMonth() + 1, 0
+   ).getDate()
+}
+
+console.log(getDaysInMonth(new Date())) // Last day of current month
+
+// GENERATE A RANDOM COLOR
+
+console.log('GENERATE A RANDOM COLOR')
+
+const getRandomColor = () => {
+   return `#${Math.floor(
+      Math.random() * 16777215
+   ).toString(16)}`
+}
+
+console.log(getRandomColor())
