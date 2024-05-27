@@ -176,3 +176,12 @@ const isEmpty = (obj) => {
 console.log(`Original Object: ${obj1}`)
 console.log(isEmpty(obj1))
 console.log(isEmpty(obj2))
+
+// Another way
+
+const isEmpty1 = (obj) => {
+   return JSON.stringify(obj) === '{}';
+}
+
+console.log('Origianl Obj:' + obj2)
+console.log(isEmpty1(obj2))
