@@ -137,3 +137,13 @@ console.log(`Intersection Arr 1: ${intersectionArray1}`)
 console.log(`Intersection Arr 2: ${intersectionArray2}`)
 
 console.log(intersection(intersectionArray1, intersectionArray2))
+
+
+// REMOVE FALSY VALUES FROM AN ARRAY
+
+let falsyArr1 = [0, 1, false, 2, '', 'a', NaN, 's', "e" * 23]
+
+const compact = (arr) => arr.filter(Boolean)
+
+console.log(`False Array: ${falsyArr1}`)
+console.log(compact(falsyArr1))
