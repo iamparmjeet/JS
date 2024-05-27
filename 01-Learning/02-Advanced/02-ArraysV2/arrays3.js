@@ -160,3 +160,19 @@ const reverseString = (str) => {
 
 console.log(`Origianl String: ${string1}`)
 console.log(reverseString(string1))
+
+
+// OBJECT IS EMPTY
+
+let obj1 = {}
+let obj2 = [
+   {"1" : 'a'}
+]
+
+const isEmpty = (obj) => {
+   return Object.keys(obj).length === 0
+}
+
+console.log(`Original Object: ${obj1}`)
+console.log(isEmpty(obj1))
+console.log(isEmpty(obj2))
