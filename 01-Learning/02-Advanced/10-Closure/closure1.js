@@ -53,7 +53,7 @@ console.log('Loop with var')
 //    setTimeout(() => console.log(i), 200)
 // }
 
-// Here whether we use let or var it only prints 3 because of closures
+// Here whether we use let or var it only prints 3 because of closures and its scope - let is local scope and var global scope
 
 let i = undefined
 console.log('i of loop', i)
