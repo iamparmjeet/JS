@@ -5,3 +5,4 @@ function evenNumArray(arr) {
 }
 
 console.log(evenNumArray(arr))
+console.log(arr)
