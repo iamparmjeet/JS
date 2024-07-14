@@ -15,4 +15,32 @@ const calFactorial = (num) => {
 
 // calFactorial(56)
 
-console.log(calFactorial(5))
+console.log(calFactorial(6))
+
+
+// Using Recursion
+
+/*
+
+fact(n) = n x n-1 x n-2 ... 1
+
+n! = n x (n-1)!
+
+5! = 5 x 4!
+
+
+*/
+
+console.log('Recursion')
+
+
+
+function factorialUsingRecursion(n) {
+   if (n === 1) {
+      return 1
+   } else {
+      return n * (factorialUsingRecursion(n-1))
+   }
+}
+
+console.log(factorialUsingRecursion(6))
