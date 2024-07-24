@@ -6,4 +6,6 @@
 - [x] 04) str.slice()
 - [x] 05) str.substring()
 - [x] 06) str.split()
-- [ ] 07) str.includes()
+- [x] 07) str.includes()
+- [x] 08) str.startsWith()
+- [x] 09) str.endsWith()
