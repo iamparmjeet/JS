@@ -1,22 +1,4 @@
-
 const str = 'The morning is upon us.'
-
-// 01-String Properties - Length
-console.log('Str length')
-console.log(str.length)
-
-console.log('Character at')
-console.log(str.charAt(5))
-
-// 02 Index of
-console.log('Index of')
-// str.indexOf(searchStr, position)
-console.log(str.indexOf('JS'))
-
-// 03 last Indexof
-// str.lastIndexOf(searchStr, position)
-console.log('Last Indexof')
-console.log(str.lastIndexOf('Code'))
 
 // 04 slice
 console.log('04 Slice')

@@ -1,3 +1,4 @@
+const str = 'The morning is upon us.'
 // 02 Index of
 console.log('Index of')
 // str.indexOf(searchStr, position)
