@@ -16,4 +16,5 @@ console.log('07-STR.INCLUDES()')
 
 console.log(str.includes('Is')) // false
 console.log(str.includes('is')) // true - case sensitive
-console.log(str.includes('is', 13))
+console.log(str.includes('is', 13)) // false
+console.log(str.includes('is', 11)) // true
