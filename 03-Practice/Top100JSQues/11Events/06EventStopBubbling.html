@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   
+<div id="outer">
+   <div id="inner">
+      <button id="myBtn">Btn</button>
+   </div>
+</div>
+
+   <script>
+      let outer = document.getElementById('outer')
+      let inner = document.getElementById('inner')
+      let btn = document.getElementById('myBtn')
+
+      // Attach 
+      outer.addEventListener('click', handleBubbling)
+      inner.addEventListener('click', handleBubbling)
+      btn.addEventListener('click', handleBubbling)
+
+      function handleBubbling(event) {
+         event.stopPropagation()
+         console.log('Bubbling: ', event.srcElement)
+      }
+
+   </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   
+<div id="outer">
+   <div id="inner">
+      <button id="myBtn">Btn</button>
+   </div>
+</div>
+
+   <script>
+      let outer = document.getElementById('outer')
+      let inner = document.getElementById('inner')
+      let btn = document.getElementById('myBtn')
+
+      // Attach 
+      outer.addEventListener('click', handleCapturing, true)
+      inner.addEventListener('click', handleCapturing, true)
+      btn.addEventListener('click', handleCapturing, true)
+
+      function handleCapturing(event) {
+         event.stopPropagation()
+         console.log('Capturing: ', event.srcElement)
+      }
+
+   </script>
+</body>
+</html>

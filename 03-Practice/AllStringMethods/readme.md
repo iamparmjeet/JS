@@ -9,3 +9,5 @@
 - [x] 07) str.includes()
 - [x] 08) str.startsWith()
 - [x] 09) str.endsWith()
+- [x] 10) str.concat()
+- [x] 11) str.repeat()
